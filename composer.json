@@ -1,0 +1,67 @@
+{
+    "name": "startcode/log",
+    "description": "Writes your logs to files, databases, search engines...",
+    "keywords": [
+        "log",
+        "logger",
+        "writer",
+        "debug"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Drasko Gomboc",
+            "email": "drasko.gomboc@gmail.com"
+        },
+        {
+            "name": "Zeljko Simic",
+            "email": "zeljkosbgd@gmail.com"
+        },
+        {
+            "name": "Petar Kapulica",
+            "email": "epkapuleti@gmail.com"
+        },
+        {
+            "name": "Nemanja Mirkov",
+            "email": "mirkovnemanja@gmail.com"
+        },
+        {
+            "name": "Vladan Zoricic",
+            "email": "vladan.zoricic@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Startcode\\Logger\\": "src/"}
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^0.9.2",
+        "phpunit/phpunit": "8.2.*"
+    },
+    "require": {
+        "php"                           : ">=7.4",
+        "elasticsearch/elasticsearch"   : "7.*",
+        "startcode/runner"              : "dev-main",
+        "startcode/profiler"            : "dev-main",
+        "startcode/commando"            : "1.*",
+        "startcode/http"                : "dev-main",
+        "startcode/clean-core"          : "1.*",
+        "startcode/value-object"        : "dev-main"
+    },
+    "repositories": [
+        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.runner.git"},
+        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.profiler.git"},
+        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.commando.git"},
+        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.http.git"},
+        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.clean-core.git"},
+        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.value-object.git"}
+    ],
+    "minimum-stability": "dev",
+    "suggest": {
+        "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server"
+    },
+    "scripts": {
+        "lint": [
+            "./vendor/bin/parallel-lint ./ --exclude vendor"
+        ]
+    }
+}
