@@ -1,5 +1,5 @@
 {
-    "name": "startcode/log",
+    "name": "startcode/logger",
     "description": "Writes your logs to files, databases, search engines...",
     "keywords": [
         "log",
