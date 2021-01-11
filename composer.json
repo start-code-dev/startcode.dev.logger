@@ -41,21 +41,19 @@
         "php"                           : ">=7.4",
         "elasticsearch/elasticsearch"   : "7.*",
         "startcode/runner"              : "1.*",
-        "startcode/profiler"            : "1.*",
-        "startcode/commando"            : "1.*",
-        "startcode/http"                : "1.*",
         "startcode/clean-core"          : "1.*",
         "startcode/value-object"        : "1.*"
     },
     "repositories": [
         {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.runner.git"},
-        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.profiler.git"},
-        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.commando.git"},
-        {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.http.git"},
         {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.clean-core.git"},
         {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.value-object.git"}
     ],
-    "minimum-stability": "dev",
+    "config": {
+        "github-oauth": {
+            "github.com": "9b1c469fec06e89a4ff50917acedae8bf2b477d6"
+        }
+    },
     "suggest": {
         "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server"
     },
