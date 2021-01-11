@@ -40,12 +40,12 @@
     "require": {
         "php"                           : ">=7.4",
         "elasticsearch/elasticsearch"   : "7.*",
-        "startcode/runner"              : "dev-main",
-        "startcode/profiler"            : "dev-main",
+        "startcode/runner"              : "1.*",
+        "startcode/profiler"            : "1.*",
         "startcode/commando"            : "1.*",
-        "startcode/http"                : "dev-main",
+        "startcode/http"                : "1.*",
         "startcode/clean-core"          : "1.*",
-        "startcode/value-object"        : "dev-main"
+        "startcode/value-object"        : "1.*"
     },
     "repositories": [
         {"type": "git", "url": "https://github.com/start-code-dev/startcode.dev.runner.git"},
